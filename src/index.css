@@ -1,11 +1,11 @@
 /* tailwind.css / app.css  (Tailwind v4, CSS-first) */
 @import "tailwindcss";
 
-/* 1) Paleta cruda + 2) tokens semánticos
-   Michemato: azul oscuro de fondo + amarillo dorado para texto/brand. */
+/* 1) Raw palette + 2) semantic tokens
+   Michemato: dark navy background + golden yellow for brand/headings. */
 @theme {
-  /* ===== PALETA BASE ===== */
-  /* Primary (azules navy) */
+  /* ===== BASE PALETTE ===== */
+  /* Primary (navy blues) */
   --color-primary-50:  #E6EBF5;
   --color-primary-100: #C2D0EA;
   --color-primary-200: #8FA8D2;
@@ -18,7 +18,7 @@
   --color-primary-900: #061632;
   --color-primary-950: #030B1F;
 
-  /* Accent (oro / amarillo dorado) */
+  /* Accent (gold / amber yellow) */
   --color-accent-50:  #FFF8E1;
   --color-accent-100: #FFECB3;
   --color-accent-200: #FFE082;
@@ -31,7 +31,7 @@
   --color-accent-900: #5E4505;
   --color-accent-950: #3A2B03;
 
-  /* Neutral (azulados oscuros para superficies) */
+  /* Neutral (cool blue-grays) */
   --color-neutral-50:  #F4F6FB;
   --color-neutral-100: #E2E7F1;
   --color-neutral-200: #C3CCDD;
@@ -44,30 +44,32 @@
   --color-neutral-900: #061227;
   --color-neutral-950: #03091A;
 
-  /* ===== TOKENS SEMÁNTICOS =====
-     Con estos vas a usar: bg-bg, text-fg, border-border,
-     bg-surface, bg-surface-2, text-muted, etc.
+  /* ===== SEMANTIC TOKENS =====
+     bg        → navy base surface
+     fg        → body text — warm off-white (readable, not gold)
+     muted     → secondary text — cool gray-blue
+     surface   → card/panel surface (lighter navy)
+     brand     → gold — reserved for headings, CTAs, highlights
   */
   --color-bg:         var(--color-primary-900);
-  --color-fg:         var(--color-accent-500);
-  --color-muted:      var(--color-accent-300);
+  --color-fg:         #E8E4D8;          /* warm off-white for body copy */
+  --color-muted:      var(--color-neutral-300);
 
   --color-surface:    var(--color-primary-800);
   --color-surface-2:  var(--color-primary-700);
   --color-surface-3:  var(--color-primary-600);
-  --color-border:     var(--color-primary-600);
+  --color-border:     var(--color-primary-700);
 
-  /* Marca / CTA — dorado sobre azul */
+  /* Gold — brand / headings / CTAs only */
   --color-brand:        var(--color-accent-500);
   --color-brand-fg:     var(--color-primary-900);
-  --color-brand-muted:  var(--color-accent-300);
-  --color-brand-strong: var(--color-accent-700);
+  --color-brand-muted:  var(--color-accent-700);
+  --color-brand-strong: var(--color-accent-300);
 
-  /* Acento secundario */
   --color-accent-solid: var(--color-accent-600);
   --color-accent-fg:    var(--color-primary-900);
 
-  /* Para los degradados decorativos */
+  /* Decorative gradient poles */
   --color-barber-1: var(--color-primary-700);
   --color-barber-2: var(--color-accent-500);
   --color-barber-3: var(--color-primary-900);
@@ -75,9 +77,9 @@
   --color-cta-text: var(--color-primary-900);
 }
 
-/* ===== OVERRIDES DARK MODE =====
-   El switch del header togglea la clase "dark" en <html>.
-   Como queremos mantener azul+dorado siempre, dark refuerza los mismos tokens.
+/* ===== DARK MODE OVERRIDES =====
+   Header toggles "dark" class on <html>.
+   We keep navy+gold always, just deepen the layers.
 */
 @layer base {
   :root {
@@ -89,18 +91,18 @@
     color-scheme: dark;
 
     --color-bg:         var(--color-primary-950);
-    --color-fg:         var(--color-accent-500);
-    --color-muted:      var(--color-accent-300);
+    --color-fg:         #E8E4D8;
+    --color-muted:      var(--color-neutral-400);
 
     --color-surface:    var(--color-primary-900);
     --color-surface-2:  var(--color-primary-800);
     --color-surface-3:  var(--color-primary-700);
-    --color-border:     var(--color-primary-700);
+    --color-border:     var(--color-primary-800);
 
     --color-brand:        var(--color-accent-500);
     --color-brand-fg:     var(--color-primary-950);
-    --color-brand-muted:  var(--color-accent-300);
-    --color-brand-strong: var(--color-accent-700);
+    --color-brand-muted:  var(--color-accent-700);
+    --color-brand-strong: var(--color-accent-300);
 
     --color-accent-solid: var(--color-accent-600);
     --color-accent-fg:    var(--color-primary-950);
@@ -111,4 +113,14 @@
   }
 
   body { @apply bg-bg text-fg; }
+
+  /* Headings use gold */
+  h1, h2, h3 { color: var(--color-accent-500); }
+
+  /* Paragraphs and body copy use off-white */
+  p, li, span, label { color: inherit; }
+
+  /* Anchor default */
+  a { color: var(--color-accent-400); }
+  a:hover { color: var(--color-accent-200); }
 }

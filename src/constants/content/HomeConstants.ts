@@ -124,7 +124,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
       intro:
         "Call, WhatsApp, or email us for orders and product information. If you prefer, call us at",
       phone: PHONE.display,
-      image: { src: "/img/about.jpeg", alt: "About Michemato" },
+      image: { src: "/img/en/footer_en.png", alt: "Michemato — Always by your side" },
       contactLinks: [
         { url: PHONE.tel, title: PHONE.display },
         { url: PHONE.whatsapp, title: "WhatsApp" },
@@ -266,7 +266,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
       intro:
         "Llámanos, mándanos WhatsApp o escríbenos por correo para pedidos e información. Si prefieres, llámanos al",
       phone: PHONE.display,
-      image: { src: "/img/about.jpeg", alt: "Sobre Michemato" },
+      image: { src: "/img/es/footer_es.jpeg", alt: "Michemato — Siempre te acompaña" },
       contactLinks: [
         { url: PHONE.tel, title: PHONE.display },
         { url: PHONE.whatsapp, title: "WhatsApp" },

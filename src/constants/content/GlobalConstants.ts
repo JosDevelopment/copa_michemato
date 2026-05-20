@@ -26,7 +26,7 @@ const GLOBAL_CONTENT: Record<Lang, GlobalBundle> = {
     footer: {
       brand: COMPANY_NAME,
       logo: { src: "", alt: `${COMPANY_NAME} logo` },
-      image: { src: "/img/en/footer_en.png", alt: `${COMPANY_NAME} — Always by your side` },
+      image: { src: "", alt: "" },
       year: new Date().getFullYear(),
     },
   },
@@ -47,7 +47,7 @@ const GLOBAL_CONTENT: Record<Lang, GlobalBundle> = {
     footer: {
       brand: COMPANY_NAME,
       logo: { src: "", alt: `${COMPANY_NAME} logo` },
-      image: { src: "/img/es/footer_es.jpeg", alt: `${COMPANY_NAME} — Siempre te acompaña` },
+      image: { src: "", alt: "" },
       year: new Date().getFullYear(),
     },
   },
