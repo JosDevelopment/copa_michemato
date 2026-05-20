@@ -33,7 +33,7 @@ const HomeFaq: React.FC<HomeFaqProps> = ({ content, className = '' }) => {
       className={`border-t border-border py-20 md:py-24 ${className}`}
     >
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-8 text-3xl font-bold text-fg">
+        <h2 className="mb-8 text-3xl font-bold text-white">
           {content.heading}
         </h2>
 
@@ -53,7 +53,7 @@ const HomeFaq: React.FC<HomeFaqProps> = ({ content, className = '' }) => {
                   type="button"
                   onClick={() => toggle(i)}
                   aria-expanded={isOpen}
-                  className="cursor-pointer flex w-full items-center justify-between gap-3 text-left text-base font-semibold text-brand"
+                  className="cursor-pointer flex w-full items-center justify-between gap-3 text-left text-base font-semibold text-white"
                 >
                   <span>{f.q}</span>
                   <span
@@ -74,7 +74,7 @@ const HomeFaq: React.FC<HomeFaqProps> = ({ content, className = '' }) => {
                   className="overflow-hidden transition-[max-height] duration-300 ease-out"
                 >
                   <div
-                    className={`pt-2 text-sm text-muted transition-[opacity,transform] duration-200 ease-out ${
+                    className={`pt-2 text-sm text-white/85 transition-[opacity,transform] duration-200 ease-out ${
                       isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-1'
                     }`}
                   >

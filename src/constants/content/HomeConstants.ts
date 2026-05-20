@@ -76,7 +76,6 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
         { type: 'image', src: "/img/photos2.jpeg", alt: "Michemato Prep — Beer and Cocktail Mixer" },
         { type: 'image', src: "/img/photos3.jpeg", alt: "Michemato + Black — Beer and Cocktail Mixer" },
         { type: 'image', src: "/img/photos4.jpeg", alt: "Michemato Shrimp — Beer and Cocktail Mixer" },
-        { type: 'image', src: "/img/photos5.png", alt: "Spring Break — I ❤ Michemato beach party" },
       ],
     },
 
@@ -218,7 +217,6 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
         { type: 'image', src: "/img/photos2.jpeg", alt: "Michemato Prep — Beer and Cocktail Mixer" },
         { type: 'image', src: "/img/photos3.jpeg", alt: "Michemato + Black — Beer and Cocktail Mixer" },
         { type: 'image', src: "/img/photos4.jpeg", alt: "Michemato Shrimp — Beer and Cocktail Mixer" },
-        { type: 'image', src: "/img/photos5.png", alt: "Spring Break — I ❤ Michemato en la playa" },
       ],
     },
 

@@ -52,7 +52,7 @@
      brand     → gold — reserved for headings, CTAs, highlights
   */
   --color-bg:         var(--color-primary-900);
-  --color-fg:         #E8E4D8;          /* warm off-white for body copy */
+  --color-fg:         #FFFFFF;
   --color-muted:      var(--color-neutral-300);
 
   --color-surface:    var(--color-primary-800);
@@ -91,7 +91,7 @@
     color-scheme: dark;
 
     --color-bg:         var(--color-primary-950);
-    --color-fg:         #E8E4D8;
+    --color-fg:         #FFFFFF;
     --color-muted:      var(--color-neutral-400);
 
     --color-surface:    var(--color-primary-900);
@@ -113,14 +113,4 @@
   }
 
   body { @apply bg-bg text-fg; }
-
-  /* Headings use gold */
-  h1, h2, h3 { color: var(--color-accent-500); }
-
-  /* Paragraphs and body copy use off-white */
-  p, li, span, label { color: inherit; }
-
-  /* Anchor default */
-  a { color: var(--color-accent-400); }
-  a:hover { color: var(--color-accent-200); }
 }

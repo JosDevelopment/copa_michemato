@@ -53,7 +53,7 @@ function App() {
       <div
         className="relative overflow-hidden bg-[url('/img/photos5.png')] bg-cover bg-center bg-fixed"
       >
-        <div className="absolute inset-0 bg-primary-950/80 pointer-events-none" aria-hidden="true" />
+        <div className="absolute inset-0 bg-primary-950/35 pointer-events-none" aria-hidden="true" />
         <div className="relative">
           <HomePricing content={content.homePricingContent} />
         </div>
