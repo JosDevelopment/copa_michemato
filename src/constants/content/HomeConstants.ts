@@ -31,39 +31,39 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
       highlight: "The premium michelada mixer.",
       description:
         "Bold, ready-to-pour michelada mixers crafted to elevate every beer. From the original Miche Black to seafood-inspired blends, Michemato turns any can into a craft experience.",
-      image: { src: "", alt: "" },
+      image: { src: "/img/hero.png", alt: "Michemato product line on the beach" },
       ctaPrimary: { url: "#contact", title: "Contact us" },
       ctaSecondary: { url: "#products", title: "See products" },
       badges: ["Premium Blend", "Made with real ingredients", "No artificial colors"],
     },
 
     services: {
-      heading: "Why Michemato",
+      heading: "Our Products",
       cta: { url: "#products", title: "View product line →" },
       items: [
         {
-          title: "Ready-to-pour mixer",
+          title: "Miche Black",
           desc:
-            "No prep, no measuring. Open the bottle, pour over your favorite cold beer and serve a perfect michelada in seconds.",
-          img: { src: "", alt: "" },
+            "The original dark michelada mixer. Bold, balanced and ready to pour over any cold beer.",
+          img: { src: "/img/product-miche-black.png", alt: "Miche Black sauce bottle" },
         },
         {
-          title: "Premium ingredients",
+          title: "Michemato + Black",
           desc:
-            "Crafted with real lime, tomato, chiles and a balanced blend of spices. Bold flavor that doesn't compromise on quality.",
-          img: { src: "", alt: "" },
+            "Beer and cocktail mixer with the signature Black profile. Deep flavor, perfect for sunset cocktails.",
+          img: { src: "/img/product-michemato-black.png", alt: "Michemato + Black bottle" },
         },
         {
-          title: "Versatile blends",
+          title: "Michemato Shrimp",
           desc:
-            "From the classic Miche Black to Michemato Prep and Shrimp, our line covers every taste — from refreshing to seafood-forward.",
-          img: { src: "", alt: "" },
+            "Seafood-inspired blend designed for shrimp cocktails and coastal pairings. Bold and savory.",
+          img: { src: "/img/product-michemato-shrimp.png", alt: "Michemato Shrimp bottle" },
         },
         {
-          title: "Perfect for bars & home",
+          title: "Michemato Spicy Clam",
           desc:
-            "Designed for bartenders who need speed and consistency, and for fans who want a pro-level michelada at home.",
-          img: { src: "", alt: "" },
+            "Spicy clam mixer for those who like it loud. The Miche Bar signature for serious michelada lovers.",
+          img: { src: "/img/product-michemato-spicy-clam.png", alt: "Michemato Spicy Clam bottle" },
         },
       ],
     },
@@ -76,6 +76,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
         { type: 'image', src: "/img/gallery3.png", alt: "Michemato Prep — Beer and Cocktail Mixer" },
         { type: 'image', src: "/img/gallery4.png", alt: "Michemato + Black — Beer and Cocktail Mixer" },
         { type: 'image', src: "/img/gallery5.png", alt: "Michemato Shrimp — Beer and Cocktail Mixer" },
+        { type: 'image', src: "/img/gallery6.png", alt: "Spring Break — I ❤ Michemato beach party" },
       ],
     },
 
@@ -172,39 +173,39 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
       highlight: "El mixer premium para tu michelada.",
       description:
         "Mezclas listas para servir, hechas para llevar cualquier cerveza a otro nivel. Desde el clásico Miche Black hasta opciones con mariscos, Michemato convierte cada lata en una experiencia artesanal.",
-      image: { src: "", alt: "" },
+      image: { src: "/img/hero.png", alt: "Línea de productos Michemato en la playa" },
       ctaPrimary: { url: "#contact", title: "Contáctanos" },
       ctaSecondary: { url: "#products", title: "Ver productos" },
       badges: ["Mezcla Premium", "Ingredientes reales", "Sin colorantes artificiales"],
     },
 
     services: {
-      heading: "¿Por qué Michemato?",
+      heading: "Nuestros Productos",
       cta: { url: "#products", title: "Ver línea de productos →" },
       items: [
         {
-          title: "Listo para servir",
+          title: "Miche Black",
           desc:
-            "Sin preparación ni medidas. Abre, sirve sobre cerveza fría y disfruta de una michelada perfecta en segundos.",
-          img: { src: "", alt: "" },
+            "El mixer oscuro original. Sabor intenso y equilibrado, listo para servir sobre cualquier cerveza fría.",
+          img: { src: "/img/product-miche-black.png", alt: "Botella de Miche Black Sauce" },
         },
         {
-          title: "Ingredientes premium",
+          title: "Michemato + Black",
           desc:
-            "Hecho con limón, tomate, chiles y una mezcla equilibrada de especias. Sabor intenso, sin sacrificar calidad.",
-          img: { src: "", alt: "" },
+            "Mixer para cerveza y coctel con el perfil Black de la casa. Sabor profundo, perfecto para cocteles al atardecer.",
+          img: { src: "/img/product-michemato-black.png", alt: "Botella de Michemato + Black" },
         },
         {
-          title: "Mezclas versátiles",
+          title: "Michemato Shrimp",
           desc:
-            "Del clásico Miche Black a Michemato Prep y Shrimp, nuestra línea cubre todos los gustos — de lo refrescante a lo marinero.",
-          img: { src: "", alt: "" },
+            "Mezcla con inspiración marinera, diseñada para cocteles de camarón y maridajes costeros. Saladito y sabroso.",
+          img: { src: "/img/product-michemato-shrimp.png", alt: "Botella de Michemato Shrimp" },
         },
         {
-          title: "Para barras y para casa",
+          title: "Michemato Spicy Clam",
           desc:
-            "Diseñado para bartenders que necesitan velocidad y consistencia, y para fans que quieren una michelada de barra en casa.",
-          img: { src: "", alt: "" },
+            "Mixer picante de almeja para los que la quieren intensa. La firma del Miche Bar para amantes de la michelada.",
+          img: { src: "/img/product-michemato-spicy-clam.png", alt: "Botella de Michemato Spicy Clam" },
         },
       ],
     },
@@ -217,6 +218,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
         { type: 'image', src: "/img/gallery3.png", alt: "Michemato Prep — Beer and Cocktail Mixer" },
         { type: 'image', src: "/img/gallery4.png", alt: "Michemato + Black — Beer and Cocktail Mixer" },
         { type: 'image', src: "/img/gallery5.png", alt: "Michemato Shrimp — Beer and Cocktail Mixer" },
+        { type: 'image', src: "/img/gallery6.png", alt: "Spring Break — I ❤ Michemato en la playa" },
       ],
     },
 

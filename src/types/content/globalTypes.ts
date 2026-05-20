@@ -72,4 +72,5 @@ export interface FooterContentType {
   year: number;
   social?: LinkType[];
   logo: ImageType;
+  image?: ImageType;
 }
