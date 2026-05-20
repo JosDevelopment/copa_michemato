@@ -1,13 +1,13 @@
 // data.ts  (business constants)
 
 export const COMPANY_NAME = "Michemato";
-export const EMAIL = "info@michemato.com";
+export const EMAIL = "michemato1@gmail.com";
 
 export const PHONE = {
-  e164: "+10000000000",
-  display: "+1 (000) 000-0000",
-  tel: "tel:+10000000000",
-  whatsapp: "https://wa.me/10000000000",
+  e164: "+19566385344",
+  display: "+1 (956) 638.5344",
+  tel: "tel:+19566385344",
+  whatsapp: "https://wa.me/19566385344",
 } as const;
 
 // Compat (por si algo viejo lo usa)
