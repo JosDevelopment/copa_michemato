@@ -31,7 +31,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
       highlight: "The premium michelada mixer.",
       description:
         "Bold, ready-to-pour michelada mixers crafted to elevate every beer. From the original Miche Black to seafood-inspired blends, Michemato turns any can into a craft experience.",
-      image: { src: "/img/hero.png", alt: "Michemato product line on the beach" },
+      image: { src: "/img/hero.jpeg", alt: "Michemato product line on the beach" },
       ctaPrimary: { url: "#contact", title: "Contact us" },
       ctaSecondary: { url: "#products", title: "See products" },
       badges: ["Premium Blend", "Made with real ingredients", "No artificial colors"],
@@ -45,25 +45,25 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
           title: "Miche Black",
           desc:
             "The original dark michelada mixer. Bold, balanced and ready to pour over any cold beer.",
-          img: { src: "/img/product-miche-black.png", alt: "Miche Black sauce bottle" },
+          img: { src: "/img/product_micheblack.jpeg", alt: "Miche Black sauce bottle" },
         },
         {
           title: "Michemato + Black",
           desc:
             "Beer and cocktail mixer with the signature Black profile. Deep flavor, perfect for sunset cocktails.",
-          img: { src: "/img/product-michemato-black.png", alt: "Michemato + Black bottle" },
+          img: { src: "/img/product_michemato%2Bblack.jpeg", alt: "Michemato + Black bottle" },
         },
         {
           title: "Michemato Shrimp",
           desc:
             "Seafood-inspired blend designed for shrimp cocktails and coastal pairings. Bold and savory.",
-          img: { src: "/img/product-michemato-shrimp.png", alt: "Michemato Shrimp bottle" },
+          img: { src: "/img/product_michematoshrimp.jpeg", alt: "Michemato Shrimp bottle" },
         },
         {
           title: "Michemato Spicy Clam",
           desc:
             "Spicy clam mixer for those who like it loud. The Miche Bar signature for serious michelada lovers.",
-          img: { src: "/img/product-michemato-spicy-clam.png", alt: "Michemato Spicy Clam bottle" },
+          img: { src: "/img/product_michematoaspicyclam.jpeg", alt: "Michemato Spicy Clam bottle" },
         },
       ],
     },
@@ -71,12 +71,12 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     gallery: {
       heading: "Our Lineup",
       items: [
-        { type: 'image', src: "/img/gallery1.png", alt: "Miche Black — Beer Mixer & More" },
-        { type: 'image', src: "/img/gallery2.png", alt: "Miche Black Premium Blend" },
-        { type: 'image', src: "/img/gallery3.png", alt: "Michemato Prep — Beer and Cocktail Mixer" },
-        { type: 'image', src: "/img/gallery4.png", alt: "Michemato + Black — Beer and Cocktail Mixer" },
-        { type: 'image', src: "/img/gallery5.png", alt: "Michemato Shrimp — Beer and Cocktail Mixer" },
-        { type: 'image', src: "/img/gallery6.png", alt: "Spring Break — I ❤ Michemato beach party" },
+        { type: 'image', src: "/img/photos0.png", alt: "Miche Black — Beer Mixer & More" },
+        { type: 'image', src: "/img/photos1.jpeg", alt: "Miche Black Premium Blend" },
+        { type: 'image', src: "/img/photos2.jpeg", alt: "Michemato Prep — Beer and Cocktail Mixer" },
+        { type: 'image', src: "/img/photos3.jpeg", alt: "Michemato + Black — Beer and Cocktail Mixer" },
+        { type: 'image', src: "/img/photos4.jpeg", alt: "Michemato Shrimp — Beer and Cocktail Mixer" },
+        { type: 'image', src: "/img/photos5.png", alt: "Spring Break — I ❤ Michemato beach party" },
       ],
     },
 
@@ -124,7 +124,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
       intro:
         "Call, WhatsApp, or email us for orders and product information. If you prefer, call us at",
       phone: PHONE.display,
-      image: { src: "", alt: "" },
+      image: { src: "/img/about.jpeg", alt: "About Michemato" },
       contactLinks: [
         { url: PHONE.tel, title: PHONE.display },
         { url: PHONE.whatsapp, title: "WhatsApp" },
@@ -173,7 +173,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
       highlight: "El mixer premium para tu michelada.",
       description:
         "Mezclas listas para servir, hechas para llevar cualquier cerveza a otro nivel. Desde el clásico Miche Black hasta opciones con mariscos, Michemato convierte cada lata en una experiencia artesanal.",
-      image: { src: "/img/hero.png", alt: "Línea de productos Michemato en la playa" },
+      image: { src: "/img/hero.jpeg", alt: "Línea de productos Michemato en la playa" },
       ctaPrimary: { url: "#contact", title: "Contáctanos" },
       ctaSecondary: { url: "#products", title: "Ver productos" },
       badges: ["Mezcla Premium", "Ingredientes reales", "Sin colorantes artificiales"],
@@ -187,25 +187,25 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
           title: "Miche Black",
           desc:
             "El mixer oscuro original. Sabor intenso y equilibrado, listo para servir sobre cualquier cerveza fría.",
-          img: { src: "/img/product-miche-black.png", alt: "Botella de Miche Black Sauce" },
+          img: { src: "/img/product_micheblack.jpeg", alt: "Botella de Miche Black Sauce" },
         },
         {
           title: "Michemato + Black",
           desc:
             "Mixer para cerveza y coctel con el perfil Black de la casa. Sabor profundo, perfecto para cocteles al atardecer.",
-          img: { src: "/img/product-michemato-black.png", alt: "Botella de Michemato + Black" },
+          img: { src: "/img/product_michemato%2Bblack.jpeg", alt: "Botella de Michemato + Black" },
         },
         {
           title: "Michemato Shrimp",
           desc:
             "Mezcla con inspiración marinera, diseñada para cocteles de camarón y maridajes costeros. Saladito y sabroso.",
-          img: { src: "/img/product-michemato-shrimp.png", alt: "Botella de Michemato Shrimp" },
+          img: { src: "/img/product_michematoshrimp.jpeg", alt: "Botella de Michemato Shrimp" },
         },
         {
           title: "Michemato Spicy Clam",
           desc:
             "Mixer picante de almeja para los que la quieren intensa. La firma del Miche Bar para amantes de la michelada.",
-          img: { src: "/img/product-michemato-spicy-clam.png", alt: "Botella de Michemato Spicy Clam" },
+          img: { src: "/img/product_michematoaspicyclam.jpeg", alt: "Botella de Michemato Spicy Clam" },
         },
       ],
     },
@@ -213,12 +213,12 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     gallery: {
       heading: "Nuestra Línea",
       items: [
-        { type: 'image', src: "/img/gallery1.png", alt: "Miche Black — Beer Mixer & More" },
-        { type: 'image', src: "/img/gallery2.png", alt: "Miche Black Premium Blend" },
-        { type: 'image', src: "/img/gallery3.png", alt: "Michemato Prep — Beer and Cocktail Mixer" },
-        { type: 'image', src: "/img/gallery4.png", alt: "Michemato + Black — Beer and Cocktail Mixer" },
-        { type: 'image', src: "/img/gallery5.png", alt: "Michemato Shrimp — Beer and Cocktail Mixer" },
-        { type: 'image', src: "/img/gallery6.png", alt: "Spring Break — I ❤ Michemato en la playa" },
+        { type: 'image', src: "/img/photos0.png", alt: "Miche Black — Beer Mixer & More" },
+        { type: 'image', src: "/img/photos1.jpeg", alt: "Miche Black Premium Blend" },
+        { type: 'image', src: "/img/photos2.jpeg", alt: "Michemato Prep — Beer and Cocktail Mixer" },
+        { type: 'image', src: "/img/photos3.jpeg", alt: "Michemato + Black — Beer and Cocktail Mixer" },
+        { type: 'image', src: "/img/photos4.jpeg", alt: "Michemato Shrimp — Beer and Cocktail Mixer" },
+        { type: 'image', src: "/img/photos5.png", alt: "Spring Break — I ❤ Michemato en la playa" },
       ],
     },
 
@@ -266,7 +266,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
       intro:
         "Llámanos, mándanos WhatsApp o escríbenos por correo para pedidos e información. Si prefieres, llámanos al",
       phone: PHONE.display,
-      image: { src: "", alt: "" },
+      image: { src: "/img/about.jpeg", alt: "Sobre Michemato" },
       contactLinks: [
         { url: PHONE.tel, title: PHONE.display },
         { url: PHONE.whatsapp, title: "WhatsApp" },
