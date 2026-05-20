@@ -58,15 +58,15 @@ export default function Mosaic({ images, openLightbox }: MosaicProps) {
             onClick={() => openLightbox(maxVisible)}
             className={[
               'relative cursor-pointer overflow-hidden rounded-2xl',
-              'border border-primary-200/60 bg-white shadow-sm',
+              'border border-border bg-bg shadow-sm',
               'transition-all hover:-translate-y-0.5 hover:shadow-lg focus:outline-none',
               'focus-visible:ring-2 focus-visible:ring-primary-500/60',
               'flex items-center justify-center',
             ].join(' ')}
             aria-label="Ver todas las fotos"
           >
-            <div className="absolute inset-0 bg-primary-900/5 opacity-0 transition-opacity duration-300 hover:opacity-100" />
-            <span className="text-base font-semibold text-primary-900">
+            <div className="absolute inset-0 bg-surface opacity-0 transition-opacity duration-300 hover:opacity-100" />
+            <span className="relative text-base font-semibold text-fg">
               +{extraCount} fotos
             </span>
           </button>
