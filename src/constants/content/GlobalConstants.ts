@@ -13,7 +13,7 @@ const GLOBAL_CONTENT: Record<Lang, GlobalBundle> = {
   en: {
     header: {
       brand: COMPANY_NAME,
-      logo: { src: "", alt: `${COMPANY_NAME} logo` },
+      logo: { src: "/img/logo.png", alt: `${COMPANY_NAME} logo` },
       nav: [
         { url: "#benefits", title: "Benefits" },
         { url: "#gallery", title: "Gallery" },
@@ -34,7 +34,7 @@ const GLOBAL_CONTENT: Record<Lang, GlobalBundle> = {
   es: {
     header: {
       brand: COMPANY_NAME,
-      logo: { src: "", alt: `${COMPANY_NAME} logo` },
+      logo: { src: "/img/logo.png", alt: `${COMPANY_NAME} logo` },
       nav: [
         { url: "#benefits", title: "Beneficios" },
         { url: "#gallery", title: "Galería" },
