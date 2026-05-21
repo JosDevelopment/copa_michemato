@@ -25,7 +25,7 @@ type HomeBundle = {
 const HOME_CONTENT: Record<Lang, HomeBundle> = {
   en: {
     hero: {
-      eslogan: '“ Beer Mixer & More ”',
+      eslogan: '“ Beer & Cocktail Mixer ”',
       eslogan2: '“ Mix it. Pour it. Enjoy it. ”',
       title: "Michemato.",
       highlight: "The premium michelada mixer.",
@@ -71,7 +71,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     gallery: {
       heading: "Our Lineup",
       items: [
-        { type: 'image', src: "/img/photos0.png", alt: "Miche Black — Beer Mixer & More" },
+        { type: 'image', src: "/img/photos0.png", alt: "Miche Black — Beer & Cocktail Mixer" },
         { type: 'image', src: "/img/photos1.jpeg", alt: "Miche Black Premium Blend" },
         { type: 'image', src: "/img/photos2.jpeg", alt: "Michemato Prep — Beer and Cocktail Mixer" },
         { type: 'image', src: "/img/photos3.jpeg", alt: "Michemato + Black — Beer and Cocktail Mixer" },
@@ -166,7 +166,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
 
   es: {
     hero: {
-      eslogan: '“ Beer Mixer & More ”',
+      eslogan: '“ Beer & Cocktail Mixer ”',
       eslogan2: '“ Mézclalo. Sírvelo. Disfrútalo. ”',
       title: "Michemato.",
       highlight: "El mixer premium para tu michelada.",
@@ -212,7 +212,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     gallery: {
       heading: "Nuestra Línea",
       items: [
-        { type: 'image', src: "/img/photos0.png", alt: "Miche Black — Beer Mixer & More" },
+        { type: 'image', src: "/img/photos0.png", alt: "Miche Black — Beer & Cocktail Mixer" },
         { type: 'image', src: "/img/photos1.jpeg", alt: "Miche Black Premium Blend" },
         { type: 'image', src: "/img/photos2.jpeg", alt: "Michemato Prep — Beer and Cocktail Mixer" },
         { type: 'image', src: "/img/photos3.jpeg", alt: "Michemato + Black — Beer and Cocktail Mixer" },

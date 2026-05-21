@@ -17,6 +17,14 @@ const HomePricing: React.FC<HomePricingProps> = ({ content, className = '' }) =>
       <div className="mx-auto max-w-7xl px-4">
         <h2 className="mb-10 whitespace-pre-line text-3xl font-bold text-white">{heading}</h2>
 
+        <img
+          src="/img/photos5.png"
+          alt=""
+          aria-hidden="true"
+          className="mb-10 block w-full max-w-md mx-auto rounded-2xl object-contain shadow-xl md:hidden"
+          loading="lazy"
+        />
+
         <div className="grid gap-6 md:grid-cols-3">
           {plans.map((p) => (
             <div
