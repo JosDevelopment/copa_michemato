@@ -80,7 +80,10 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     },
 
     pricing: {
-      heading: "Michemato Product Line",
+      heading: `
+        "SUN, SAND & MICHEMATO"
+        ¡ENJOY THE MOMENT!
+      `,
       cta: { url: "#contact", title: "Request information" },
       plans: [
         {
@@ -221,7 +224,10 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     },
 
     pricing: {
-      heading: "Línea de productos Michemato",
+      heading:` 
+      "SOL, ARENA Y MICHEMATO"
+      DISFRUTA EL MOMENTO!
+      `,
       cta: { url: "#contact", title: "Solicitar información" },
       plans: [
         {
