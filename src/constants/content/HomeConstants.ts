@@ -226,7 +226,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     pricing: {
       heading:` 
       "SOL, ARENA Y MICHEMATO"
-      DISFRUTA EL MOMENTO!
+      ¡DISFRUTA EL MOMENTO!
       `,
       cta: { url: "#contact", title: "Solicitar información" },
       plans: [
