@@ -15,7 +15,7 @@ const HomePricing: React.FC<HomePricingProps> = ({ content, className = '' }) =>
   return (
     <section id="products" className={`py-20 md:py-24 ${className}`}>
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="mb-10 text-3xl font-bold text-white">{heading}</h2>
+        <h2 className="mb-10 whitespace-pre-line text-3xl font-bold text-white">{heading}</h2>
 
         <div className="grid gap-6 md:grid-cols-3">
           {plans.map((p) => (

@@ -29,7 +29,7 @@ const HomeServices: React.FC<HomeServicesProps> = ({ content, className = '' }) 
               className="group overflow-hidden rounded-3xl border border-border bg-surface transition hover:-translate-y-1 hover:shadow-xl"
             >
               {s.img.src && (
-                <div className="relative aspect-video overflow-hidden bg-surface-2">
+                <div className="relative aspect-video overflow-hidden bg-white">
                   <img
                     src={s.img.src}
                     alt={s.img.alt || s.title}

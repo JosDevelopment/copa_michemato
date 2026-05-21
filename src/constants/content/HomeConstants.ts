@@ -80,10 +80,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     },
 
     pricing: {
-      heading: `
-        "SUN, SAND & MICHEMATO"
-        ¡ENJOY THE MOMENT!
-      `,
+      heading: `"SUN, SAND & MICHEMATO"\n¡ENJOY THE MOMENT!`,
       cta: { url: "#contact", title: "Request information" },
       plans: [
         {
@@ -224,10 +221,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     },
 
     pricing: {
-      heading:` 
-      "SOL, ARENA Y MICHEMATO"
-      ¡DISFRUTA EL MOMENTO!
-      `,
+      heading: `"SOL, ARENA Y MICHEMATO"\n¡DISFRUTA EL MOMENTO!`,
       cta: { url: "#contact", title: "Solicitar información" },
       plans: [
         {
