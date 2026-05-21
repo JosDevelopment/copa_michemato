@@ -29,11 +29,11 @@ const HomeServices: React.FC<HomeServicesProps> = ({ content, className = '' }) 
               className="group overflow-hidden rounded-3xl border border-border bg-surface transition hover:-translate-y-1 hover:shadow-xl"
             >
               {s.img.src && (
-                <div className="relative aspect-video overflow-hidden">
+                <div className="relative aspect-video overflow-hidden bg-surface-2">
                   <img
                     src={s.img.src}
                     alt={s.img.alt || s.title}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
                   />
                   {/* Precio en badge acento */}
                   {s.price && (
