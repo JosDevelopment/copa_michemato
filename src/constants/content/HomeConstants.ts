@@ -60,10 +60,10 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
           img: { src: "/img/product_michematoshrimp.jpeg", alt: "Michemato Shrimp bottle" },
         },
         {
-          title: "Michemato Spicy Clam",
+          title: "Michemato Prep",
           desc:
-            "Spicy clam mixer for those who like it loud. The Miche Bar signature for serious michelada lovers.",
-          img: { src: "/img/product_michematoaspicyclam.jpeg", alt: "Michemato Spicy Clam bottle" },
+            "Beer and cocktail mixer with a bright tomato + chile profile. Versatile for micheladas and red cocktails.",
+          img: { src: "/img/product_michematoprep.jpeg", alt: "Michemato Prep bottle" },
         },
       ],
     },
@@ -204,10 +204,10 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
           img: { src: "/img/product_michematoshrimp.jpeg", alt: "Botella de Michemato Shrimp" },
         },
         {
-          title: "Michemato Spicy Clam",
+          title: "Michemato Prep",
           desc:
-            "Mixer picante de almeja para los que la quieren intensa. La firma del Miche Bar para amantes de la michelada.",
-          img: { src: "/img/product_michematoaspicyclam.jpeg", alt: "Botella de Michemato Spicy Clam" },
+            "Mixer para cerveza y cocteles con perfil de tomate y chile vibrante. Versátil para micheladas y cocteles rojos.",
+          img: { src: "/img/product_michematoprep.jpeg", alt: "Botella de Michemato Prep" },
         },
       ],
     },
