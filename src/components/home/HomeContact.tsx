@@ -12,7 +12,6 @@ const HomeContact: React.FC<HomeContactProps> = ({ content, className = '' }) =>
   const {
     heading,
     intro,
-    phone,
     image,
     hours,
     branches,
@@ -35,13 +34,7 @@ const HomeContact: React.FC<HomeContactProps> = ({ content, className = '' }) =>
             {heading}
           </h2>
 
-          <p className="mt-2 max-w-2xl text-muted">
-            {intro}{' '}
-            <a className="underline text-fg" href={`tel:${phone}`}>
-              {phone}
-            </a>
-            .
-          </p>
+          <p className="mt-2 max-w-2xl text-muted">{intro}</p>
         </div>
 
         <div className={`grid gap-8 ${image.src ? 'md:grid-cols-12' : ''}`}>

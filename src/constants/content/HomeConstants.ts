@@ -9,7 +9,7 @@ import type {
   HomeServicesContentType,
 } from "../../types/content/homeTypes";
 
-import { PHONE, EMAIL } from "../data";
+import { EMAIL } from "../data";
 import type { Lang } from "../../lib/i18n";
 import { getLanguage, subscribeLanguage } from "../../lib/i18n";
 
@@ -120,13 +120,10 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
 
     contact: {
       heading: "For more information",
-      intro:
-        "Call, WhatsApp, or email us for orders and product information. If you prefer, call us at",
-      phone: PHONE.display,
+      intro: "Email us for orders and product information.",
+      phone: "",
       image: { src: "/img/en/footer_en.png", alt: "Michemato — Always by your side" },
       contactLinks: [
-        { url: PHONE.tel, title: PHONE.display },
-        { url: PHONE.whatsapp, title: "WhatsApp" },
         { url: `mailto:${EMAIL}`, title: EMAIL },
       ],
       hours: ["Hours: Not listed"],
@@ -158,7 +155,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
         },
         {
           q: "How can I contact you for more information?",
-          a: `Call us at ${PHONE.display}, message us on WhatsApp, or email ${EMAIL}.`,
+          a: `Email us at ${EMAIL}.`,
         },
       ],
     },
@@ -261,13 +258,10 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
 
     contact: {
       heading: "Para más información",
-      intro:
-        "Llámanos, mándanos WhatsApp o escríbenos por correo para pedidos e información. Si prefieres, llámanos al",
-      phone: PHONE.display,
+      intro: "Escríbenos por correo para pedidos e información.",
+      phone: "",
       image: { src: "/img/es/footer_es.jpeg", alt: "Michemato — Siempre te acompaña" },
       contactLinks: [
-        { url: PHONE.tel, title: PHONE.display },
-        { url: PHONE.whatsapp, title: "WhatsApp" },
         { url: `mailto:${EMAIL}`, title: EMAIL },
       ],
       hours: ["Horario: No listado"],
@@ -299,7 +293,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
         },
         {
           q: "¿Cómo los contacto para más información?",
-          a: `Llámanos al ${PHONE.display}, mándanos WhatsApp o escribe a ${EMAIL}.`,
+          a: `Escríbenos a ${EMAIL}.`,
         },
       ],
     },
