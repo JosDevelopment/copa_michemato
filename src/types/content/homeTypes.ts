@@ -17,6 +17,7 @@ export interface HomeHeroContentType {
 // HomeServices 
 export interface HomeServiceItem {
   title: string;
+  tagline?: string;
   desc: string;
   price?: string;
   img: ImageType;

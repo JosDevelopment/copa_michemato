@@ -1,6 +1,6 @@
 // data.ts  (business constants)
 
-export const COMPANY_NAME = "Michemato";
+export const COMPANY_NAME = "Franky's Michelados";
 export const EMAIL = "michemato1@gmail.com";
 
 export const PHONE = {
