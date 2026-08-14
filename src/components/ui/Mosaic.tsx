@@ -25,9 +25,14 @@ export default function Mosaic({ images, openLightbox }: MosaicProps) {
   const visible = images.slice(0, maxVisible)
   const extraCount = Math.max(0, images.length - maxVisible)
 
+  // El primer tile ocupa 2x2. Con 3 tiles caben exactos en 3 columnas;
+  // con 4 (o 3 + el tile "+N") se necesitan 4.
+  const tileCount = visible.length + (extraCount > 0 ? 1 : 0)
+  const colsClass = tileCount <= 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-4'
+
   return (
     <section className="py-6">
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[150px]">
+      <div className={`grid grid-cols-2 sm:grid-cols-3 ${colsClass} gap-4 auto-rows-[150px]`}>
         {visible.map((img, idx) => (
           <button
             key={idx}
@@ -42,9 +47,8 @@ export default function Mosaic({ images, openLightbox }: MosaicProps) {
               gridRowEnd: idx === 0 ? 'span 2' : undefined,
               gridColumnEnd: idx === 0 ? 'span 2' : undefined,
             }}
-            aria-label={`Ver imagen ${idx + 1}`}
+            aria-label={t.imageAlt(idx + 1)}
           >
-            <img src={img.src} alt={img.alt || t.imageAlt(idx + 1)} />
             <div className="relative w-full h-full">
               <img
                 src={img.src}
