@@ -22,7 +22,7 @@ const HomeServices: React.FC<HomeServicesProps> = ({ content, className = '' }) 
           </a>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((s) => (
             <article
               key={s.title}
@@ -55,6 +55,10 @@ const HomeServices: React.FC<HomeServicesProps> = ({ content, className = '' }) 
                     </span>
                   )}
                 </div>
+
+                {s.tagline && (
+                  <p className="text-sm font-semibold text-brand">{s.tagline}</p>
+                )}
 
                 <p className="text-sm text-muted">{s.desc}</p>
               </div>

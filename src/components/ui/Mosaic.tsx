@@ -1,6 +1,7 @@
 'use client'
 
 import type { ImageType } from "../../types/content/globalTypes"
+import { useLanguage } from "../../lib/i18n"
 
 
 interface MosaicProps {
@@ -12,6 +13,14 @@ interface MosaicProps {
  * Galería fachada (primeros 4). Si hay más, muestra tile “+N”.
  */
 export default function Mosaic({ images, openLightbox }: MosaicProps) {
+  const lang = useLanguage()
+  const t = {
+    viewPhoto: lang === 'es' ? 'Ver foto' : 'View photo',
+    viewAll: lang === 'es' ? 'Ver todas las fotos' : 'View all photos',
+    more: (n: number) => (lang === 'es' ? `+${n} fotos` : `+${n} photos`),
+    imageAlt: (n: number) => (lang === 'es' ? `Imagen ${n}` : `Image ${n}`),
+  }
+
   const maxVisible = 4
   const visible = images.slice(0, maxVisible)
   const extraCount = Math.max(0, images.length - maxVisible)
@@ -35,11 +44,11 @@ export default function Mosaic({ images, openLightbox }: MosaicProps) {
             }}
             aria-label={`Ver imagen ${idx + 1}`}
           >
-            <img src={img.src} alt={img.alt || `Imagen ${idx + 1}`} />
+            <img src={img.src} alt={img.alt || t.imageAlt(idx + 1)} />
             <div className="relative w-full h-full">
               <img
                 src={img.src}
-                alt={img.alt || `Imagen ${idx + 1}`}
+                alt={img.alt || t.imageAlt(idx + 1)}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03] group-hover:saturate-110"
                 sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
                 loading={idx < 3 ? 'eager' : 'lazy'}
@@ -48,7 +57,7 @@ export default function Mosaic({ images, openLightbox }: MosaicProps) {
 
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             <span className="pointer-events-none absolute inset-x-3 bottom-3 rounded-lg bg-primary-500 px-2 py-1 text-[11px] font-semibold text-white shadow-sm ring-1 ring-white/10 opacity-0 transition-all duration-300 group-hover:opacity-100">
-              Ver foto
+              {t.viewPhoto}
             </span>
           </button>
         ))}
@@ -63,11 +72,11 @@ export default function Mosaic({ images, openLightbox }: MosaicProps) {
               'focus-visible:ring-2 focus-visible:ring-primary-500/60',
               'flex items-center justify-center',
             ].join(' ')}
-            aria-label="Ver todas las fotos"
+            aria-label={t.viewAll}
           >
             <div className="absolute inset-0 bg-surface opacity-0 transition-opacity duration-300 hover:opacity-100" />
             <span className="relative text-base font-semibold text-fg">
-              +{extraCount} fotos
+              {t.more(extraCount)}
             </span>
           </button>
         )}
