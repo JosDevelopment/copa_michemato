@@ -3,6 +3,7 @@
 
 import React from 'react';
 import type { HomePricingContentType } from '../../types/content/homeTypes';
+import aboutImg from '../../assets/img/about.jpeg';
 
 interface HomePricingProps {
   content: HomePricingContentType;
@@ -18,7 +19,7 @@ const HomePricing: React.FC<HomePricingProps> = ({ content, className = '' }) =>
         <h2 className="mb-10 whitespace-pre-line text-3xl font-bold text-white">{heading}</h2>
 
         <img
-          src="/img/about.jpeg"
+          src={aboutImg}
           alt=""
           aria-hidden="true"
           className="mb-10 block w-full max-w-md mx-auto rounded-2xl object-contain shadow-xl md:hidden"
