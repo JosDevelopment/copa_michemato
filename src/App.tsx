@@ -51,7 +51,7 @@ function App() {
       <HomeGallery content={content.homeGallaryContent} />
 
       <div
-        className="relative overflow-hidden bg-[url('/img/label.jpeg')] bg-cover bg-center bg-fixed"
+        className="relative overflow-hidden bg-[url('/img/about.jpeg')] bg-cover bg-center bg-fixed"
       >
         <div className="absolute inset-0 bg-primary-950/35 pointer-events-none" aria-hidden="true" />
         <div className="relative">
