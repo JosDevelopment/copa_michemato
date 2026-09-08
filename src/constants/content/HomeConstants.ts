@@ -18,7 +18,7 @@ import aboutImg from "../../assets/img/about.jpeg";
 import footerImg from "../../assets/img/footer.jpeg";
 import productBlackImg from "../../assets/img/product_black.jpeg";
 import productPrepImg from "../../assets/img/product_prep.jpeg";
-import productMixImg from "../../assets/img/product_mix.jpeg";
+import productMixImg from "../../assets/img/product_mix.webp";
 
 type HomeBundle = {
   hero: HomeHeroContentType;
@@ -69,7 +69,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
           tagline: "Two Flavors. Your Perfect Mix.",
           desc:
             "The perfect combination of Franky's Michelados Prep and Black, blended your way. Adjust the balance to your taste and create your perfect michelada—bold, savory, and uniquely yours. You choose the mix. You create the flavor.",
-          img: { src: productMixImg, alt: "Franky's Michelados Mix — Prep + Black bottle" },
+          img: { src: productMixImg, alt: "Franky's Michelados Prep plus Black equals Mix" },
         },
       ],
     },
@@ -209,7 +209,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
           tagline: "Dos sabores. Tu mezcla perfecta.",
           desc:
             "La combinación perfecta de Franky's Michelados Prep y Black, mezclada a tu manera. Ajusta el balance a tu gusto y crea tu michelada perfecta: intensa, sabrosa y única. Tú eliges la mezcla. Tú creas el sabor.",
-          img: { src: productMixImg, alt: "Botella de Franky's Michelados Mix — Prep + Black" },
+          img: { src: productMixImg, alt: "Franky's Michelados Prep + Black = Mix" },
         },
       ],
     },
