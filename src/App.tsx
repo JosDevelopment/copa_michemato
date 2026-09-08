@@ -12,6 +12,7 @@ import { FALLBACK_FOOTER_CONTENT, FALLBACK_HEADER_CONTENT } from './constants/co
 import HomeContact from './components/home/HomeContact'
 import { useLanguage } from './lib/i18n'
 import HomeGallery from './components/home/HomeGallery'
+import aboutImg from './assets/img/about.jpeg'
 
 type HomeContent = Awaited<ReturnType<typeof getHomeContent>>
 
@@ -51,7 +52,8 @@ function App() {
       <HomeGallery content={content.homeGallaryContent} />
 
       <div
-        className="relative overflow-hidden bg-[url('/img/label.jpeg')] bg-cover bg-center bg-fixed"
+        className="relative overflow-hidden bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url(${aboutImg})` }}
       >
         <div className="absolute inset-0 bg-primary-950/35 pointer-events-none" aria-hidden="true" />
         <div className="relative">

@@ -3,6 +3,7 @@
 import { getLanguage, subscribeLanguage, type Lang } from "../../lib/i18n";
 import type { FooterContentType, HeaderContentType } from "../../types/content/globalTypes";
 import { COMPANY_NAME } from "../data";
+import logoImg from "../../assets/img/logo.jpeg";
 
 type GlobalBundle = {
   header: HeaderContentType;
@@ -13,7 +14,7 @@ const GLOBAL_CONTENT: Record<Lang, GlobalBundle> = {
   en: {
     header: {
       brand: COMPANY_NAME,
-      logo: { src: "/img/logo.png", alt: `${COMPANY_NAME} logo` },
+      logo: { src: logoImg, alt: `${COMPANY_NAME} logo` },
       nav: [
         { url: "#benefits", title: "Benefits" },
         { url: "#gallery", title: "Gallery" },
@@ -25,7 +26,7 @@ const GLOBAL_CONTENT: Record<Lang, GlobalBundle> = {
     },
     footer: {
       brand: COMPANY_NAME,
-      logo: { src: "/img/logo.png", alt: `${COMPANY_NAME} logo` },
+      logo: { src: logoImg, alt: `${COMPANY_NAME} logo` },
       image: { src: "", alt: "" },
       year: new Date().getFullYear(),
     },
@@ -34,7 +35,7 @@ const GLOBAL_CONTENT: Record<Lang, GlobalBundle> = {
   es: {
     header: {
       brand: COMPANY_NAME,
-      logo: { src: "/img/logo.png", alt: `${COMPANY_NAME} logo` },
+      logo: { src: logoImg, alt: `${COMPANY_NAME} logo` },
       nav: [
         { url: "#benefits", title: "Beneficios" },
         { url: "#gallery", title: "Galería" },
@@ -46,7 +47,7 @@ const GLOBAL_CONTENT: Record<Lang, GlobalBundle> = {
     },
     footer: {
       brand: COMPANY_NAME,
-      logo: { src: "/img/logo.png", alt: `${COMPANY_NAME} logo` },
+      logo: { src: logoImg, alt: `${COMPANY_NAME} logo` },
       image: { src: "", alt: "" },
       year: new Date().getFullYear(),
     },

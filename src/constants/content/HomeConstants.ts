@@ -13,6 +13,13 @@ import { EMAIL } from "../data";
 import type { Lang } from "../../lib/i18n";
 import { getLanguage, subscribeLanguage } from "../../lib/i18n";
 
+import heroImg from "../../assets/img/hero.jpeg";
+import aboutImg from "../../assets/img/about.jpeg";
+import footerImg from "../../assets/img/footer.jpeg";
+import productBlackImg from "../../assets/img/product_black.jpeg";
+import productPrepImg from "../../assets/img/product_prep.jpeg";
+import productMixImg from "../../assets/img/product_mix.webp";
+
 type HomeBundle = {
   hero: HomeHeroContentType;
   services: HomeServicesContentType;
@@ -23,7 +30,7 @@ type HomeBundle = {
 };
 
 // Una sola imagen de footer para ambos idiomas
-const FOOTER_IMAGE_SRC = "/img/footer.jpeg";
+const FOOTER_IMAGE_SRC = footerImg;
 
 const HOME_CONTENT: Record<Lang, HomeBundle> = {
   en: {
@@ -34,7 +41,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
       highlight: "The Ultimate Mixers for Beer & Cocktails.",
       description:
         "Discover a World of New Intense Flavors. Three signature blends — Black, Prep and Mix — crafted to turn any cold beer into a bold, savory michelada.",
-      image: { src: "/img/hero.jpeg", alt: "Spring breakers love Franky's Michelados on the beach" },
+      image: { src: heroImg, alt: "Franky's Michelados — Beer & Cocktail Mixer" },
       ctaPrimary: { url: "#contact", title: "Contact us" },
       ctaSecondary: { url: "#products", title: "See products" },
       badges: ["Special Condiments Blend", "Made in Mexico", "Beer & Cocktail Mixer"],
@@ -48,21 +55,21 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
           title: "Franky's Michelados Black",
           desc:
             "A specially crafted blend of savory sauces, spices, and seasonings made to create an incredibly bold and flavorful michelada. Just mix with your favorite beer, serve over ice, and enjoy the authentic taste of Franky's Michelados Black.",
-          img: { src: "/img/product_black.jpeg", alt: "Franky's Michelados Black bottle" },
+          img: { src: productBlackImg, alt: "Franky's Michelados Black bottle" },
         },
         {
           title: "Franky's Michelados Prep",
           tagline: "Ready to Serve. Ready Anywhere.",
           desc:
             "A perfectly balanced blend of savory flavors and spices, crafted to bring the michelada bar experience wherever you are. At home, at a party, or on the go—just pour, mix with your favorite beer, and enjoy. Your favorite michelada bar is now wherever you are.",
-          img: { src: "/img/product_prep.jpeg", alt: "Franky's Michelados Prep bottle" },
+          img: { src: productPrepImg, alt: "Franky's Michelados Prep bottle" },
         },
         {
           title: "Franky's Michelados Mix – Prep + Black",
           tagline: "Two Flavors. Your Perfect Mix.",
           desc:
             "The perfect combination of Franky's Michelados Prep and Black, blended your way. Adjust the balance to your taste and create your perfect michelada—bold, savory, and uniquely yours. You choose the mix. You create the flavor.",
-          img: { src: "/img/product_mix.jpeg", alt: "Franky's Michelados Mix — Prep + Black bottle" },
+          img: { src: productMixImg, alt: "Franky's Michelados Prep plus Black equals Mix" },
         },
       ],
     },
@@ -70,9 +77,9 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     gallery: {
       heading: "Gallery",
       items: [
-        { type: 'image', src: "/img/label.jpeg", alt: "Franky's Michelados — Beer & Cocktail Mixer" },
-        { type: 'image', src: "/img/hero.jpeg", alt: "Spring breakers love Franky's Michelados" },
-        { type: 'image', src: "/img/footer.jpeg", alt: "Franky's Michelados served on the beach" },
+        { type: 'image', src: heroImg, alt: "Franky's Michelados — Beer & Cocktail Mixer" },
+        { type: 'image', src: aboutImg, alt: "Spring breakers love Franky's Michelados" },
+        { type: 'image', src: footerImg, alt: "Franky's Michelados served on the beach" },
       ],
     },
 
@@ -174,7 +181,7 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
       highlight: "Los mejores mezcladores para cerveza y cocteles.",
       description:
         "Descubre un mundo de nuevos sabores intensos. Tres mezclas de la casa — Black, Prep y Mix — creadas para convertir cualquier cerveza fría en una michelada intensa y llena de sabor.",
-      image: { src: "/img/hero.jpeg", alt: "Spring breakers disfrutando Franky's Michelados en la playa" },
+      image: { src: heroImg, alt: "Franky's Michelados — mezclador para cerveza y cocteles" },
       ctaPrimary: { url: "#contact", title: "Contáctanos" },
       ctaSecondary: { url: "#products", title: "Ver productos" },
       badges: ["Mezcla especial de condimentos", "Hecho en México", "Mezclador para cerveza y cocteles"],
@@ -188,21 +195,21 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
           title: "Franky's Michelados Black",
           desc:
             "Una mezcla especialmente elaborada de salsas, especias y sazonadores, creada para lograr una michelada increíblemente intensa y llena de sabor. Solo mézclala con tu cerveza favorita, sírvela con hielo y disfruta el auténtico sabor de Franky's Michelados Black.",
-          img: { src: "/img/product_black.jpeg", alt: "Botella de Franky's Michelados Black" },
+          img: { src: productBlackImg, alt: "Botella de Franky's Michelados Black" },
         },
         {
           title: "Franky's Michelados Prep",
           tagline: "Listo para servir. Listo en cualquier lugar.",
           desc:
             "Una mezcla perfectamente equilibrada de sabores y especias, creada para llevar la experiencia de la barra de micheladas a donde tú estés. En casa, en una fiesta o de viaje: solo sirve, mezcla con tu cerveza favorita y disfruta. Tu barra de micheladas favorita ahora está donde tú estés.",
-          img: { src: "/img/product_prep.jpeg", alt: "Botella de Franky's Michelados Prep" },
+          img: { src: productPrepImg, alt: "Botella de Franky's Michelados Prep" },
         },
         {
           title: "Franky's Michelados Mix – Prep + Black",
           tagline: "Dos sabores. Tu mezcla perfecta.",
           desc:
             "La combinación perfecta de Franky's Michelados Prep y Black, mezclada a tu manera. Ajusta el balance a tu gusto y crea tu michelada perfecta: intensa, sabrosa y única. Tú eliges la mezcla. Tú creas el sabor.",
-          img: { src: "/img/product_mix.jpeg", alt: "Botella de Franky's Michelados Mix — Prep + Black" },
+          img: { src: productMixImg, alt: "Franky's Michelados Prep + Black = Mix" },
         },
       ],
     },
@@ -210,9 +217,9 @@ const HOME_CONTENT: Record<Lang, HomeBundle> = {
     gallery: {
       heading: "Galería",
       items: [
-        { type: 'image', src: "/img/label.jpeg", alt: "Franky's Michelados — mezclador para cerveza y cocteles" },
-        { type: 'image', src: "/img/hero.jpeg", alt: "Spring breakers disfrutando Franky's Michelados" },
-        { type: 'image', src: "/img/footer.jpeg", alt: "Franky's Michelados servido en la playa" },
+        { type: 'image', src: heroImg, alt: "Franky's Michelados — mezclador para cerveza y cocteles" },
+        { type: 'image', src: aboutImg, alt: "Spring breakers disfrutando Franky's Michelados" },
+        { type: 'image', src: footerImg, alt: "Franky's Michelados servido en la playa" },
       ],
     },
 
